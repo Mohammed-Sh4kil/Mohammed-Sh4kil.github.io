@@ -8,6 +8,14 @@
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
     <style>
+        ul {
+            list-style-type: disc; /* Use disc bullets for the list */
+        }
+
+        li {
+            margin-bottom: 10px; /* Add margin at the bottom of each list item */
+            margin-right: 20px;
+        }
         /* Style the link to look like a button */
         .button-link {
             display: inline-block;
@@ -18,6 +26,13 @@
             border: none;
             cursor: pointer;
             border-radius: 5px;
+        }
+        .portfolio-item {
+            border: 1px solid #ccc; /* Add your preferred border style here */
+            border-radius: 10px; /* Add border-radius to create rounded corners */
+            padding: 10px; /* Add padding for spacing inside the border */
+            border-color: #0BCEAF;
+            margin-left: 50px;
         }
     </style>
     <!-- Favicon -->
@@ -301,69 +316,111 @@
     <div class="container-fluid pt-5 pb-3" id="portfolio">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Portfolio</h1>
                 <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
             </div>
-            
+
+            <h5 style="text-align: center; font-style: italic; color: grey; margin-bottom: 40px;">Click on image to view full detail on GitHub page.</h5>
+
             <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="col-lg-5 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
                         <h2>Day Planner API</h2>
-                        <img class="img-fluid rounded w-100" src="img/API image.jpg" alt="">
-                        
-                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                            <a href="https://github.coventry.ac.uk/mohamme23/mohammed-shakil-10240212-api" class="button-link">See project</a>
-                        </div>
+                        <a href="https://github.coventry.ac.uk/mohamme23/mohammed-shakil-10240212-api">
+                            <img class="img-fluid rounded w-100" src="img/API image.jpg" alt="Big Data Processing Project">
+                        </a>
+                        <h4 style="text-align: center; margin: 10px;">Project Description</h4>
+                        <ul>
+                            <li>REST API serving as a day planner and fullstack project.</li>
+                            <li>Enables frontend interaction for viewing, updating, and deleting tasks on a weekly calendar grid.</li>
+                            <li>Requires user registration or login to access API functionality.</li>
+                            <li>Utilizes MySQL for data storage, including user accounts and set tasks.</li>
+                        </ul>
+
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <div class="col-lg-5 col-md-6 mb-4 portfolio-item second">  
                     <div class="position-relative overflow-hidden mb-2">
                         <h2>Day Planner App</h2>
-                        <img class="img-fluid rounded w-100" src="img/APP image.jpg" alt="">
+                        <a href="https://github.coventry.ac.uk/mohamme23/MohammedShakil">
+                            <img class="img-fluid rounded w-100" src="img/APP image.jpg" alt="Big Data Processing Project">
+                        </a>
+                        <h4 style="text-align: center; margin: 10px;">Project Description</h4>
+                        <ul>
+                            <li>Creation of a day planner app featuring task scheduling and weather updates.</li>
+                            <li>Users can select a day to add tasks and receive weather notifications for those times.</li>
+                            <li>Tasks can be added with specified durations and optional descriptions.</li>
+                            <li>Users can view the complete day plan, including all scheduled tasks and weather forecasts.</li>
+                            <li>Functionality to edit, update, or delete existing tasks within the app.</li>
+                        </ul>
 
-                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                            <a href="https://github.coventry.ac.uk/mohamme23/MohammedShakil" class="button-link">See project</a>
-                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                <div class="col-lg-5 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
                         <h2>Price Comparison Site</h2>
-                        <img class="img-fluid rounded w-100" src="img/PRice comp.jpg" alt="">
+                        <a href="https://github.coventry.ac.uk/mohamme23/6001CEM_FinalProject">
+                            <img class="img-fluid rounded w-100" src="img/PRice comp.jpg" alt="Big Data Processing Project">
+                        </a>
+                        <h4 style="text-align: center; margin: 10px;">Project Description</h4>
+                        <ul>
+                            <li>Price comparison website for university students seeking affordable laptops.</li>
+                            <li>Provides search bars and dropdown menus for students to specify their preferences.</li>
+                            <li>Conducts web scraping on multiple sites to find the cheapest laptops.</li>
+                            <li>Displays laptop names, prices, and images for user selection.</li>
+                            <li>Offers recommendations based on previous users' searches.</li>
+                            <li>Stores data about selected laptops in a database for future recommendations.</li>
+                        </ul>
 
-                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                            <a href="https://github.coventry.ac.uk/mohamme23/6001CEM_FinalProject" class="button-link">See project</a>
-                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="col-lg-5 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
                         <h2>Machine Learning </h2>
-                        <img class="img-fluid rounded w-100" src="img/Machine.jpg" alt="">
+                        <a href="https://github.coventry.ac.uk/mohamme23/10240212-SM-s1">
+                            <img class="img-fluid rounded w-100" src="img/Machine.jpg" alt="Big Data Processing Project">
+                        </a>
+                        <h4 style="text-align: center; margin: 10px;">Project Description</h4>
+                        <ul>
+                            <li>Utilized machine learning methods: logistic regression, MLP classifier, and K nearest neighbor.</li>
+                            <li>Logistic regression assessed chemical levels in water to predict safety, achieving over 80% accuracy.</li>
+                            <li>Implemented logistic regression with strong regularization (0.1) and saga optimization for faster convergence.</li>
+                            <li>Trained the model, plotted training accuracy, and tested it on the dataset, printing accuracy results.</li>
+                        </ul>
 
-                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                            <a href="https://github.coventry.ac.uk/mohamme23/10240212-SM-s1" class="button-link">See project</a>
-                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <div class="col-lg-5 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2">
                         <h2>Big Data Processing</h2>
-                        <img class="img-fluid rounded w-100" src="img/big-data-icon.jpg" alt="">
+                        <a href="https://github.coventry.ac.uk/mohamme23/5011CEM2122_mohamme23">
+                            <img class="img-fluid rounded w-100" src="img/big-data-icon.jpg" alt="Big Data Processing Project">
+                        </a>
+                        <h4 style="text-align: center; margin: 10px;">Project Description</h4>
+                        <ul>
+                            <li>Investigates sequential and parallel techniques to reduce processing time.</li>
+                            <li>Uses parallel processing to estimate required processors and RAM under a 2-hour time limit.</li>
+                            <li>Organizes project code into reusable functions stored in separate files.</li>
+                            <li>Enables easy adaptation and updates by centralizing code within functions.</li>
+                        </ul>
 
-                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                            <a href="https://github.coventry.ac.uk/mohamme23/5011CEM2122_mohamme23" class="button-link">See project</a>
-                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                <div class="col-lg-5 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
-                        <h2>Auction Website</h2>
-                        <img class="img-fluid rounded w-100" src="img/auction-icon-vector.jpg" alt="">
+                        <h2>Secured Website</h2>
+                        <a href="https://github.coventry.ac.uk/mohamme23/5001CEM-auction">
+                            <img class="img-fluid rounded w-100" src="img/security.jpg" alt="Big Data Processing Project">
+                        </a>
+                        <h4 style="text-align: center; margin: 10px;">Project Description</h4>
+                        <ul>
+                            <li>Conducted a security audit, combining both manual and automated assessments to identify vulnerabilities.</li>
+                            <li>Successfully fortified the online bookstore against top OWASP attacks and vulnerabilities.</li>
+                            <li>Implemented input validation mechanisms to mitigate the risk of HTML and SQL injection attacks.</li>
+                            <li>Strengthened security by introducing stringent authentication requirements, mandating the use of secure and complex passwords.</li>
+                            <li>Assessed and documented risks, utilizing OWASP risk ratings to prioritize and address security concerns.</li>
+                        </ul>
 
-                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                            <a href="https://github.coventry.ac.uk/mohamme23/5001CEM-auction" class="button-link">See project</a>
-                        </div>
                     </div>
                 </div>
             </div>
